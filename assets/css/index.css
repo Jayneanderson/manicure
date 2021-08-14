@@ -17,13 +17,21 @@ a {
     text-decoration: none;
 }
 
+.padding80 {
+    padding-top: 88px;
+    padding-bottom: 80px;
+}
+
 .container {
     border: 1px solid #CC2D78;
-    padding: 24px 160px;
+    padding-left: 160px;
+    padding-right: 160px;
 }   
 
 .banner {
     height: 630px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: #070944;
     /* background-image: url('../img/banner.JPG'); */
     background-size: auto 640px;
@@ -87,4 +95,55 @@ a {
     border-radius: 40px;
     background-color: #CC2D78;
     color: #fff;
+}
+
+.about-me {
+    border: 1px solid red;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+    
+}
+
+.about-imgs {
+    width: 451.80px;
+    height: 504px;
+    position: relative;
+}
+
+.about-img {
+    width: 342px;
+    height: 342px;
+    position: absolute;
+    background-color: #CC2D78;
+}
+
+#img1 {
+    left: 108px;
+    bottom: 0;
+}
+
+.text-container {
+    width: 528px;
+}
+
+.title-section {
+    font-size: 48px;
+}
+
+.subtitle {
+    margin: 8px 0;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .9);
+}
+
+.comment {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .7);
 }
