@@ -185,9 +185,65 @@ a {
 
 #testimonials-text {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 #testimonials-person {
     color: #CC2D78;
+}
+
+.promotions {
+    background-color: #070944;
+}
+
+.promotions-content {
+    width: 680px;
+}
+
+.promotions .title-section, .promotions .comment {
+    color: #fff;
+}
+
+.promotions .comment {
+    margin-bottom: 32px;
+}
+
+.register-email {
+    display: flex;
+    height: 56px;
+}
+
+#email {
+    width: 505px;
+    height: 100%;
+    padding-left: 16px;
+    border-radius: 40px 0 0 40px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000000;
+    outline: none;
+}
+
+#email:focus {
+    border: 1px solid #CC2D78;
+}
+
+#email::-webkit-input-placeholder{
+    color:#000000;
+}
+
+#email::-moz-placeholder {
+    color:#000000;
+}
+
+.btn-submit {
+    width: 175px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #CC2D78;
+    color: #fff;
+    border: none;
+    border-radius: 0 40px 40px 0;
 }
