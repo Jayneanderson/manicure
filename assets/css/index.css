@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+.f-col-center {
+
+}
+
 .padding80 {
     padding-top: 88px;
     padding-bottom: 80px;
@@ -57,11 +61,24 @@ a {
     margin-left: 32px;
 }
 
+.title {
+    text-align: center;
+}
+
 .title,
-.list-link {
+.element-link {
     cursor: pointer;
     color: #fff;
 }
+
+.element-link {
+    transition: .2s;
+}
+
+.element-link:hover {
+    color: #CC2D78;
+    transition: .2s;
+} 
 
 .active {
     color: #CC2D78;
@@ -246,4 +263,91 @@ a {
     color: #fff;
     border: none;
     border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-submit:hover {
+    background-color: #000000;
+    transition: .2s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.footer .title {
+    color: #000000;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.social-icon {
+    margin-right: 8px;
+}
+
+.icon-link {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #CC2D78;
+    transition: .2s ease all;
+}
+
+.icon-link:hover {
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0);
+    transition: .2s;
+}
+
+.icon-link:hover .icon path {
+    fill: #CC2D78;
+    transition: .2s;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-color {
+    color: #fff;
+}
+
+.contact {
+    padding: 0 24px;
+}
+
+.contact-link {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    bottom: 16px;
+}
+
+#contact {
+    width: 180px;
+    height: 218px;
+    border-radius: 0;
+    animation: contact 3s linear;
+}
+
+@keyframes contact {
+    0% { width: 80px; height: 80px;}
+    100% {width: 180px; height: 218px;}
 }
