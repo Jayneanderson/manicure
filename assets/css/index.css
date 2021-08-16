@@ -112,6 +112,12 @@ a {
     border-radius: 40px;
     background-color: #CC2D78;
     color: #fff;
+    transition: .2s;
+}
+
+.button-time:hover {
+    background-color: #212121;
+    transition: .2s;
 }
 
 .about-me {
@@ -268,7 +274,7 @@ a {
 }
 
 .btn-submit:hover {
-    background-color: #000000;
+    background-color: #212121;
     transition: .2s;
 }
 
@@ -325,7 +331,7 @@ a {
 }
 
 .contact {
-    padding: 0 24px;
+    padding: 0 16px;
 }
 
 .contact-link {
@@ -335,19 +341,83 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: black;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .7);
     position: fixed;
     bottom: 16px;
+    cursor: pointer;
+} 
+
+.contact-link:hover {
+    background-color: #F5F5F5;
+    transition: .2s;
 }
 
-#contact {
-    width: 180px;
-    height: 218px;
+#contactClick {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 8px;
+    padding-bottom: 8px;
+    cursor: context-menu;
+}
+
+.contact-active {
+    width: 140px;
+    height: 170px;
     border-radius: 0;
-    animation: contact 3s linear;
+    animation: contact .4s linear;
 }
 
 @keyframes contact {
     0% { width: 80px; height: 80px;}
-    100% {width: 180px; height: 218px;}
+    100% {width: 140px; height: 170px;}
+}
+
+#close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-weight: bold;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card {
+    height: 60px;
+}
+
+.card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, .7);
+}
+
+.card-name {
+    font-weight: 400;
+}
+
+#contactClick .icon-link {
+    width: 40px;
+    height: 40px;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+}
+
+#contactClick .social-icons {
+    width: 70%;
+    justify-content: space-between;
+    margin: 0;
 }
