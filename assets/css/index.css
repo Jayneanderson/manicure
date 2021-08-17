@@ -27,7 +27,8 @@ a {
 }
 
 .container {
-    border: 1px solid #CC2D78;
+    /* border: 1px solid #CC2D78; */
+    width: 100%;
     padding-left: 160px;
     padding-right: 160px;
 }   
@@ -121,7 +122,6 @@ a {
 }
 
 .about-me {
-    border: 1px solid red;
 }
 
 .about-me-container {
@@ -366,7 +366,7 @@ a {
     width: 140px;
     height: 170px;
     border-radius: 0;
-    animation: contact .4s linear;
+    animation: contact .3s linear;
 }
 
 @keyframes contact {
@@ -420,4 +420,18 @@ a {
     width: 70%;
     justify-content: space-between;
     margin: 0;
+}
+
+.btn-top {
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    color: #fff;
+}
+
+.btn-top:hover {
+    background-color: #212121;
+    transition: .2s
 }
