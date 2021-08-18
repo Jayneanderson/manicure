@@ -1,0 +1,87 @@
+@media only screen and (max-width:1012px) {
+    .about-me-container {
+        justify-content: center;
+        border: 1px solid tomato;
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-imgs {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-img {
+        width: 300px;
+        height: 300px;
+        position: static;
+    }
+
+    #img1 {
+        margin-right: 6px;
+    }
+
+    #img2 {
+        margin-left: 6px;
+    }
+    
+    .title-section {
+        font-size: 36px;
+    }
+    
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .offer {
+        border: 1px solid brown;
+    }
+
+    #title-testimonials {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    
+    .promotions-content {
+    }
+
+    #open {
+        display: block;
+    }
+    
+    #close {
+        z-index: 999;
+    }
+    #isClick[type=checkbox]:checked ~ #open {
+        display: none;
+    }
+
+    #isClick[type=checkbox]:checked ~ #close {
+        display: block;
+    }
+
+    .nav {
+        width: 250px;
+        display: none;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .message-button {
+        width: 100%;
+    }
+    
+    .message {
+        
+        font-size: 36px;
+    }
+    
+}
