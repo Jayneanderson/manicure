@@ -18,37 +18,50 @@
 
     <div class="">
         <div class="container banner">
-            <input type="checkbox" name="" id="isClick">
-        <label for="isClick" class="menu-container" id="open">
-            <i class="fas fa-align-justify"></i>
-        </label>
-        <label for="isClick" class="menu-container" id="close">
-            <i class="fas fa-times"></i>
-        </label>
             <header class="header" id="header">
                 <div>
                     <h1 class="title">Mc Jayne</h1>
                 </div>
 
+                <input type="checkbox" name="" id="isClick">
+                <label for="isClick" class="menu-container" id="open">
+                    <i class="fas fa-align-justify"></i>
+                </label>
+                <label for="isClick" class="menu-container" id="close">
+                    <i class="fas fa-times"></i>
+                </label>
+
                 <nav class="nav">
                     <ul class="list">
                         <li class="list-element">
-                            <a href="#" class="element-link active">INÍCIO</a>
+                            <a href="#" class="element-link active">
+                                <i class="fas element-icon fa-home"></i>
+                                INÍCIO</a>
                         </li>
                         <li class="list-element">
-                            <a href="#" class="element-link">SOBRE</a>
+                            <a href="#" class="element-link">
+                                <i class="far element-icon fa-address-card"></i>
+                                SOBRE</a>
                         </li>
                         <li class="list-element">
-                            <a href="#" class="element-link">SERVIÇOS</a>
+                            <a href="#" class="element-link">
+                                <i class="fas element-icon fa-clipboard-list"></i>
+                                SERVIÇOS</a>
                         </li>
                         <li class="list-element">
-                            <a href="#" class="element-link">GALERIA</a>
+                            <a href="#" class="element-link">
+                                <i class="fas element-icon fa-images"></i>
+                                GALERIA</a>
                         </li>
                         <li class="list-element">
-                            <a href="#" class="element-link">TESTEMUNHOS</a>
+                            <a href="#" class="element-link">
+                                <i class="fas element-icon fa-female"></i>
+                                TESTEMUNHOS</a>
                         </li>
                         <li class="list-element">
-                            <a href="#" class="element-link">CONTATO</a>
+                            <a href="#" class="element-link">
+                                <i class="fas fa-id-card"></i>
+                                CONTATO</a>
                         </li>
                     </ul>
                 </nav>
@@ -173,7 +186,7 @@
             <!-- Card expandido -->
             <div href="#" class="contact-link contact-active" id="contactClick">
                 <div id="close-container">
-                    <span id="close" onclick="Card.close()">x</span>
+                    <span id="closeCard" onclick="Card.close()">x</span>
                 </div>
                 <div class="card">
                     <img src="assets/img/banner.JPG" class="card-img" alt="">
