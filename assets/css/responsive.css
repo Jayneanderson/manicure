@@ -53,13 +53,13 @@
     .promotions-content {
     }
 
-    #open {
+    #open, #close {
         display: block;
-    }
-    
-    #close {
+        right: 24px;
+        top: 32px;
         z-index: 999;
     }
+
     #isClick[type=checkbox]:checked ~ #open {
         display: none;
     }
@@ -68,13 +68,56 @@
         display: block;
     }
 
+    /* Criando menu lateral */
+    
     .nav {
-        width: 250px;
-        display: none;
-        position: fixed;
+        width: 256px;
+        display: block; /* depois mude para none aqui*/
+        padding-top: 16px;
+        position: absolute;
         z-index: 3;
+        right: 0;
+        top: 10px;
+        border: 1px solid red;
+        background-color: #fff;
+        
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list-element {
+        margin-left: 0;
+        /* padding: 2px; */
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
+    .list-element:hover .element-link {
+        background-color: rgba(236, 239, 241, .7);
+        transition: .2s;
+    }
+    
+    .element-link {
+        display: block;
+        padding: 8px;
+        padding-left: 8px;
+        color: #000000;
+        border-radius: 5px;
+        transition: .2s;
+    }
+
+    .element-icon {
+        display: inline;
+        margin-right: 5px;width: 18px;
+    }
+    
+    #isClick[type=checkbox]:checked ~ .nav {
+        display: block;   
+    }
+    
     .message-button {
         width: 100%;
     }
