@@ -50,13 +50,26 @@ a {
     justify-content: space-between;
 }
 
-#open, #close, #isClick {
+#close, #isClick {
     display: none;
     position: absolute;
 }
 
-.nav {
+#open {
+    display: none;
+    position: fixed;
+}
 
+#logo {
+    display: none;
+}
+
+.nav-container {
+    display: block;
+}
+
+
+.nav {
 }
 
 .list {
