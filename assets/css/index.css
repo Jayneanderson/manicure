@@ -120,12 +120,21 @@ a {
     justify-content: space-between;
     padding-top: 140px;
     padding-bottom: 32px;
+    position: relative;
 }
 
 .message {
     font-size: 48px;
     font-weight: normal;
-    color: #fff;
+    color: #212121;
+    z-index: 3;
+}
+
+#screen {
+    position: absolute;
+    /* background-color: brown; */
+    top: -100px;
+    z-index: 0;
 }
 
 .button-time {
@@ -140,6 +149,7 @@ a {
     background-color: #CC2D78;
     color: #fff;
     transition: .2s;
+    z-index: 3;
 }
 
 .button-time:hover {
@@ -231,6 +241,10 @@ a {
     border: 1px solid saddlebrown;
 }
 
+#firstBlock {
+    width: 461px;
+}
+
 .second-block {
     width: 49%;
     margin-left: 10px;
@@ -239,17 +253,30 @@ a {
 
 .block-imgs2 {
     width: 100%;
-    height: 49%;
     display: flex;
+    justify-content: space-between;
     border: 1px solid green;
+    
+}
 
+#blockImg1 {
+    width: 49%;
+    border: 1px solid palegreen;
+}
+
+#blockImg2 {
+    width: 49%;
+    border: 1px solid palegreen;
 }
 
 .block-imgs3 {
     height: 49%;
     margin-top: 8px;
     border: 1px solid greenyellow;
+}
 
+#blockImg3 {
+    width: 100%;
 }
 
 .testimonials {
@@ -301,7 +328,7 @@ a {
 }
 
 .register-email {
-    width: 100%;
+    width: 70%;
     height: 56px;
     display: flex;
 }
