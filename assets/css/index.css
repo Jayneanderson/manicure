@@ -83,14 +83,17 @@ a {
     margin-left: 32px;
 }
 
-.title {
-    text-align: center;
-}
-
 .title,
 .element-link {
     cursor: pointer;
     color: #fff;
+}
+
+.title {
+    color: #212121;
+    z-index: 999;
+    position: relative;
+    text-align: center;
 }
 
 .element-link {
@@ -130,12 +133,6 @@ a {
     z-index: 3;
 }
 
-#screen {
-    position: absolute;
-    /* background-color: brown; */
-    top: -100px;
-    z-index: 0;
-}
 
 .button-time {
     width: 216px;
@@ -151,10 +148,16 @@ a {
     transition: .2s;
     z-index: 3;
 }
-
 .button-time:hover {
     background-color: #212121;
     transition: .2s;
+}
+
+#screen {
+    position: absolute;
+    /* background-color: brown; */
+    top: -100px;
+    z-index: 0;
 }
 
 .about-me {
