@@ -32,8 +32,8 @@ a {
 .container {
     /* border: 1px solid #CC2D78; */
     width: 100%;
-    /* padding-left: 160px;
-    padding-right: 160px; */
+    padding-left: 80px;
+    padding-right: 80px;
 }   
 
 .banner {
@@ -90,7 +90,7 @@ a {
 }
 
 .title {
-    color: #212121;
+    color: #fff;
     z-index: 999;
     position: relative;
     text-align: center;
@@ -129,7 +129,7 @@ a {
 .message {
     font-size: 48px;
     font-weight: normal;
-    color: #212121;
+    color: #fff;
     z-index: 3;
 }
 
@@ -153,14 +153,16 @@ a {
     transition: .2s;
 }
 
-#screen {
+/* #screen {
     position: absolute;
-    /* background-color: brown; */
+    /* background-color: brown; 
     top: -100px;
     z-index: 0;
-}
+} */
 
 .about-me {
+    background: url('../img/1.jpeg') no-repeat;
+    background-size: cover;
 }
 
 .about-me-container {
