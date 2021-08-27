@@ -161,8 +161,7 @@ a {
 } */
 
 .about-me {
-    background: url('../img/1.jpeg') no-repeat;
-    background-size: cover;
+    
 }
 
 .about-me-container {
@@ -214,7 +213,9 @@ a {
     color: rgba(0, 0, 0, .7);
 }
 
-.offer {
+#offer {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/1.jpeg') no-repeat; /* o gradiente cria uma camada escura */
+    background-size: cover;
 }
 
 #offer-text {
@@ -242,12 +243,11 @@ a {
 
 .first-block {
     width: 49%;
-    height: 400px;
     border: 1px solid saddlebrown;
 }
 
 #firstBlock {
-    width: 461px;
+    width: 100%;
 }
 
 .second-block {
