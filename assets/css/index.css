@@ -234,7 +234,7 @@ a {
 }
 
 .gallery-imgs {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border: 1px solid slateblue;
@@ -242,46 +242,14 @@ a {
 }
 
 .first-block {
-    width: 49%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid saddlebrown;
 }
 
-#firstBlock {
-    width: 100%;
-}
-
-.second-block {
-    width: 49%;
-    margin-left: 10px;
-    border: 1px solid red;
-}
-
-.block-imgs2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid green;
-    
-}
-
-#blockImg1 {
-    width: 49%;
-    border: 1px solid palegreen;
-}
-
-#blockImg2 {
-    width: 49%;
-    border: 1px solid palegreen;
-}
-
-.block-imgs3 {
-    height: 49%;
-    margin-top: 8px;
-    border: 1px solid greenyellow;
-}
-
-#blockImg3 {
-    width: 100%;
+.person-img {
+    height: 250px;
 }
 
 .testimonials {
