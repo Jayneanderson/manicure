@@ -38,7 +38,9 @@ a {
 
 .banner {
     height: 630px;
-    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-bottom: 24px;
     background-color: #070944;
     /* background-image: url('../img/banner.JPG'); */
@@ -47,10 +49,25 @@ a {
     background-position-x: right;
 }
 
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    background: url('../img/banner.JPG') no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
 .header {
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, .8);
+
 }
 
 #close, #isClick {
@@ -83,14 +100,17 @@ a {
     margin-left: 32px;
 }
 
+.list-element:first-child {
+    margin-left: 0;
+}
+
 .title,
 .element-link {
     cursor: pointer;
-    color: #fff;
+    color: #070944;
 }
 
 .title {
-    color: #fff;
     z-index: 999;
     position: relative;
     text-align: center;
@@ -115,13 +135,14 @@ a {
 }
 
 
-.message-button {
-    width: 400px;
+.banner-wrapper {
+    width: 43%;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 140px;
+    padding-top: 96px;
+    padding-right: 24px;
     padding-bottom: 64px;
     position: relative;
 }
@@ -133,6 +154,11 @@ a {
     z-index: 3;
 }
 
+.message-text {
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
 
 .button-time {
     width: 216px;
@@ -140,7 +166,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     border-radius: 40px;
     background-color: #CC2D78;
@@ -230,26 +256,27 @@ a {
 
 .gallery {
     width: 100%;
-    border: 1px solid springgreen;
 }
 
 .gallery-imgs {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid slateblue;
+    padding-right: 16px;
     
 }
 
 .first-block {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid saddlebrown;
 }
 
 .person-img {
-    height: 250px;
+    width: 270px;
+    margin-left: 16px;
+    margin-bottom: 16px;
 }
 
 .testimonials {
@@ -411,6 +438,7 @@ a {
     background-color: #fff;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .7);
     position: fixed;
+    z-index: 999;
     bottom: 16px;
     cursor: pointer;
 } 
