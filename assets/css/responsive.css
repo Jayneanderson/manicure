@@ -1,4 +1,4 @@
-@media only screen and (max-width:1220px) {
+@media only screen and (max-width:1270px) {
     /* 
     eu quero pegar a imagem
     diminuir ela e manter na esqueda
@@ -6,6 +6,29 @@
     */
     .banner-content {
         background-size: 55% auto;
+    }
+
+    .banner-wrapper {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:1160px) {
+    /* .about-imgs {
+        justify-content: center;
+    } */
+
+    .about-me-container {
+        justify-content: center;
+    }
+    
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comment {
+        margin-bottom: 16px;
     }
 }
 
@@ -34,16 +57,11 @@
         border: 1px solid tomato;
     }
 
-    .text-container {
-        width: 100%;
-        text-align: center;
-    }
-
     .about-imgs {
-        width: 100%;
         height: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin-right: 0;
     }
 
     .about-img {
@@ -57,15 +75,12 @@
     }
 
     #img2 {
+        display: none;
         margin-left: 6px;
     }
     
     .title-section {
         font-size: 36px;
-    }
-    
-    .subtitle {
-        font-size: 24px;
     }
 
     .offer {
@@ -102,8 +117,8 @@
     
     #open { 
         padding: 5px;
-        right: 32px;
-        top: 32px;
+        right: 16px;
+        top: 24px;
         background-color: #fff;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .6);
     }
@@ -207,10 +222,40 @@
     #isClick[type=checkbox]:checked ~ .nav-container .nav {
         right: 0px;
     }
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner {
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/banner.JPG') no-repeat;
+        background-size: cover;
+    }
+
+    .banner-content {
+        background-image: none;
+        justify-content: center;
+    }
+
+    .banner-wrapper {
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        padding-top: 0;
+        padding-right: 0;
+    }
     
     .message {
         width: 300px;
         font-size: 36px;
     }
     
+    .message,
+    .message-text {
+        text-align: center;
+
+    }
+
+    
+
 }
