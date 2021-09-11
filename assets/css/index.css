@@ -24,8 +24,8 @@ a {
 
 }
 
-.padding80 {
-    padding-top: 88px;
+.padding {
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -158,7 +158,7 @@ a {
 }
 
 .title {
-    z-index: 999;
+    z-index: 4;
     position: relative;
     text-align: center;
 }
@@ -228,22 +228,14 @@ a {
     font-size: 48px;
 }
 
-.subtitle {
-    margin: 8px 0;
-    line-height: 1.5;
-    font-size: 24px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, .9);
-}
-
 .comment {
     font-size: 16px;
     color: rgba(0, 0, 0, .7);
 }
 
 #offer {
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/1.jpeg') no-repeat; /* o gradiente cria uma camada escura */
-    background-size: cover;
+    /* background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/1.jpeg') no-repeat; /* o gradiente cria uma camada escura
+    background-size: cover; */
 }
 
 #offer-text {
@@ -251,9 +243,38 @@ a {
 }
 
 .services {
-    width: 50%;
     display: flex;
     justify-content: space-between;
+
+}
+
+.card-services {
+    width: 350px;
+    height: 300px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid #070944;
+}
+
+#card1 {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+#card2 {
+    margin-left: 16px;
+}
+
+.card-title {
+    margin: 8px 0;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .9);
+}
+
+.card-comment {
+    font-size: 16px;
 }
 
 .gallery {
@@ -330,7 +351,7 @@ a {
 }
 
 .register-email {
-    width: 70%;
+    width: 100%;
     height: 56px;
     display: flex;
 }
@@ -339,8 +360,11 @@ a {
     width: 100%;
     height: 100%;
     padding-left: 16px;
-    border-radius: 40px 0 0 40px;
     border: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     font-size: 16px;
     background-color: #fff;
     color: #000000;
@@ -367,7 +391,10 @@ a {
     background-color: #CC2D78;
     color: #fff;
     border: none;
-    border-radius: 0 40px 40px 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     cursor: pointer;
     transition: .2s;
 }
