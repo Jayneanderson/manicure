@@ -95,6 +95,11 @@
 
 @media only screen and (max-width:800px) {
     
+    .padding {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
     .header {
         justify-content: center;
     }
@@ -255,7 +260,20 @@
         text-align: center;
 
     }
-
     
+    .services {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-services {
+        width: 100%;
+        height: auto;
+    }
+
+    #card1, #card2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
 }
