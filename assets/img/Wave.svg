@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
     width="1440" height="560" viewBox="0 0 1440 560">
     <g fill="none">
-        <rect width="1440" height="560" x="0" y="0" fill="#0e2a47"></rect>
+        <rect width="1440" height="560" x="0" y="0" fill="#CC2D78"></rect>
         <path
             d="M 0,144 C 57.6,117.2 172.8,5 288,10 C 403.2,15 460.8,170 576,169 C 691.2,168 748.8,-0.8 864,5 C 979.2,10.8 1036.8,175.4 1152,198 C 1267.2,220.6 1382.4,134 1440,118L1440 560L0 560z"
-            fill="#184a7e"></path>
+            fill="#070944"></path>
         <path
             d="M 0,391 C 96,414.4 288,515 480,508 C 672,501 768,371.6 960,356 C 1152,340.4 1344,415.2 1440,430L1440 560L0 560z"
-            fill="#2264ab"></path>
+            fill="#CC2D78"></path>
     </g>
     <defs>
-        <mask id="SvgjsMask1000">
+        <mask>
             <rect width="1440" height="560" fill="#ffffff"></rect>
         </mask>
     </defs>
